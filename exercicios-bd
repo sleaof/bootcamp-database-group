@@ -1,0 +1,10 @@
+select * from clientes where id_clientes > 5 ;
+select * from clientes where id_clientes > 5 order by created_at desc;
+select * from clientes where id_clientes > 5 and tipo = 'PJ' order by created_at desc;
+select * from clientes where id_clientes > 5 and tipo = 'CPF' ;
+select * from pedidos where data_pedido between '20200101' and '20200131';
+select * from pedidos limit 10;
+select distinct categortia from produtos;
+select nome, tipo, sum(preco) as 'valor_total' from cliente where tipo = 'renda' 
+and id_cliente = 48;
+select count(*) from pedidos where status_pedido = 'cancelado';
