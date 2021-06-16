@@ -1,0 +1,5 @@
+1. Falso;
+2. Verdadeiro;
+3. Falso;
+4. Falso;
+5. Falso.

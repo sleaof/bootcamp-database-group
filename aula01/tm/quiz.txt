@@ -1,0 +1,8 @@
+Verdadeiro ou falso
+
+1. Verdadeiro;
+2. Falso;
+3. Falsoo.
+
+Resposta correta
+1. C.

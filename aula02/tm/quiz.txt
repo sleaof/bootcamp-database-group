@@ -1,0 +1,26 @@
+1. O que é chamado de junção em um banco de dados?
+Uma junção de tabelas cria uma pseudo-tabela derivada de duas ou mais tabelas de acordo com as regras especificadas, e que são parecidas com as regras da teoria dos conjuntos.
+
+2. Nomeie e explique 2 tipos de junção.
+INNERJOIN: retorna os registros que são comuns em duas tabelas;
+LEFTJOIN: retorna todos os registros da tabela A e os registros que são comuns a tabela B.
+
+3. Para que é usado o GROUP BY?
+O GROUPBY agrupa as linhas com os mesmos valores. Você pode agrupar por nome, por exemplo.
+
+4. Para que é usado o HAVING?
+O HAVING é muito similar ao WHERE, mas é usado para funções agregadas.
+
+5. Dados os diagramas a seguir, indique a qual junção ele corresponde: 
+A. INNERJOIN;
+B. LEFTJOIN;
+C. RIGHTJOIN;
+D. FULLOUTERJOIN;
+
+6. Escreva uma consulta genérica para cada um dos diagramas da instrução anterior.
+SELECT name
+FROM tableA as a
+(INNER JOIN|LEFT JOIN|RIGHT JOIN|FULL OUTER JOIN) tableB as b 
+ON a.id = b.id
+
+
