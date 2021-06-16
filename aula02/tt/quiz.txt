@@ -1,0 +1,38 @@
+1. Explique o conceito de normalização e 2 níveis de normalização.
+R: A normalização é um processo de padronização e validação de dados que consiste em eliminar redundâncias ou inconsistências. - 1NF: Eliminação de duplicatas; - 2NF: Eliminação de subgrupos de dados de uma tabela.
+
+2. Liste pelo menos 3 características de um banco de dados não normalizado.
+R: Dados errados, redundantes e nulos.
+
+
+3. Liste pelo menos 3 características de um banco de dados normalizados.
+R: Dados precisos, únicos e integros.
+
+4. Explique em suas palavras o que são as queries DML.
+R: Queries são consultas nos realizadas nos dados de um Banco. As queries DML`s são realizadas por instruções SQL (INSERT, UPDATE, DELETE).  
+
+5. Explique para que serve a instrução UPDATE e dê um exemplo.
+R: A instrução UPDATE serve para alterar algum campo do banco de dados.
+
+UPDATE user
+SET email = 'gui@gmail.com'
+WHERE id = 1;
+
+6. Quais das seguintes não é uma declaração DML.
+R: CREATE, ALTER, TRUNCATE.
+
+7. Para que você usaria uma tabela volátil.
+R: Para reunir vários registros de várias tabelas em uma única seleção.
+
+8. O que é um índice e quais são as vantagens de usá-lo?
+R: O índice é um mecanismo para otimizar consultas.
+
+9. Nomeie e explique um tipo de índice.
+R: O tipo de índice NUPI é utilizado quando criamos queremos manter uma primary key com duplicatas.
+
+10. Escreva uma declaração para criar um índice em uma tabela chamada funcionários no ID.
+R: CREATE INDEX func_id_idx ON funcionario (id)
+
+
+
+
