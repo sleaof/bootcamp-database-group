@@ -29,12 +29,12 @@ public class PublicationController {
         return new ResponseEntity<>(publicationService.getPublication(publicationId), HttpStatus.OK);
     }
 
-    @PostMapping("/updatePublication/{publicationId}")
+    @PutMapping("/updatePublication/{publicationId}")
     public ResponseEntity<PublicationEntity> updatePublication(@PathVariable Integer publicationId, @RequestBody PublicationEntity publicationEntity) {
         return new ResponseEntity<>(publicationService.updatePublication(publicationId, publicationEntity), HttpStatus.OK);
     }
 
-    @GetMapping("/deletePublication/{publicationId}")
+    @DeleteMapping("/deletePublication/{publicationId}")
     public ResponseEntity<?> removePublication(@PathVariable Integer publicationId) {
         publicationService.removePublication(publicationId);
         return new ResponseEntity<>(HttpStatus.OK);

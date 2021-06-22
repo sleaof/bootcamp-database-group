@@ -27,12 +27,12 @@ public class UserController {
         return new ResponseEntity<>(userService.getUser(userId), HttpStatus.OK);
     }
 
-    @PostMapping("/updateUser/{userId}")
+    @PutMapping("/updateUser/{userId}")
     public ResponseEntity<UserEntity> updateUser(@PathVariable Integer userId, @RequestBody UserEntity userEntity) {
         return new ResponseEntity<>(userService.updateUser(userId, userEntity), HttpStatus.OK);
     }
 
-    @GetMapping("/deleteUser/{userId}")
+    @DeleteMapping("/deleteUser/{userId}")
     public ResponseEntity<?> removeUser(@PathVariable Integer userId) {
         userService.removeUser(userId);
         return new ResponseEntity<>(HttpStatus.OK);
