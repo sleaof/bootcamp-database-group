@@ -15,7 +15,6 @@ public class AlunoServicesImpl implements AlunoServices{
 
     private AlunoRepository alunoRepository;
 
-
     @Override
     public Aluno saveAll(Aluno aluno) {
         return alunoRepository.save(aluno);
@@ -31,4 +30,5 @@ public class AlunoServicesImpl implements AlunoServices{
         List<Aluno> randomSeries = alunos.subList(0, randomSeriesLength);
         return randomSeries;
     }
+
 }

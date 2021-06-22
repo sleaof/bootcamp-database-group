@@ -7,4 +7,5 @@ import java.util.List;
 public interface AlunoServices {
     public Aluno saveAll(Aluno aluno);
     public List<Aluno> findTeenAluno();
+
 }
