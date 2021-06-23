@@ -8,8 +8,8 @@ public interface StudentService {
 
     StudentEntity getStudent(Long studentId);
     List<StudentEntity> getAllStudents();
-    StudentEntity addStudent(StudentEntity studentEntity);
-    StudentEntity updateStudent(Long studentId, StudentEntity studentEntity);
+    void addStudent(StudentEntity studentEntity);
+    void updateStudent(Long studentId, StudentEntity studentEntity);
     void deleteStudent(Long studentId);
 
 }

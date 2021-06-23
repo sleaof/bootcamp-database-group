@@ -27,21 +27,18 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public StudentEntity addStudent(StudentEntity studentEntity) {
-        return studentRepository.save(studentEntity);
+    public void addStudent(StudentEntity studentEntity) {
+        studentRepository.createStudent(studentEntity.getName());
     }
 
     @Override
-    public StudentEntity updateStudent(Long studentId, StudentEntity studentEntity) {
-        StudentEntity studentUpdate = getStudent(studentId);
-        studentUpdate.setName(studentEntity.getName());
-        return addStudent(studentUpdate);
+    public void updateStudent(Long studentId, StudentEntity studentEntity) {
+        studentRepository.updateStudentName(studentId, studentEntity.getName());
     }
 
     @Override
     public void deleteStudent(Long studentId) {
-        StudentEntity studentEntity = studentRepository.findById(studentId).orElseThrow();
-        studentRepository.delete(studentEntity);
+        studentRepository.deleteStudent(studentId);
     }
 
 }
